@@ -41,6 +41,7 @@ function dogLoop(numberOfDogs) {
     }
 }
 
+// Removed this function in favor of submitForm()
 // function watchForm() {
 //   $('form').submit(event => {
 //     event.preventDefault();
@@ -54,6 +55,7 @@ function submitForm() {
         event.preventDefault()
         $('.results').empty()
         numberOfDogs = $('select').val()
+        $('.results').append(`<h2>Look at these dogs!</h2>`)
         dogLoop(numberOfDogs)
     })
 }
@@ -61,7 +63,4 @@ function submitForm() {
 $(function() {
   console.log('App loaded! Waiting for submit!');
   submitForm()
-//   dogLoop()
-//   getDogImage()
-//   displayAnotherResult()
 });
