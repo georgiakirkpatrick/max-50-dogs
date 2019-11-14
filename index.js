@@ -52,16 +52,16 @@ function submitForm() {
     $('.js-gimme-some-dogs').on('click', function() {
         console.log('form was submitted')
         event.preventDefault()
-        let numberOfDogs = $('select').val()
+        $('.results').empty()
+        numberOfDogs = $('select').val()
         dogLoop(numberOfDogs)
     })
 }
 
 $(function() {
   console.log('App loaded! Waiting for submit!');
-  console.log(numberOfDogs)
   submitForm()
-  dogLoop()
+//   dogLoop()
 //   getDogImage()
 //   displayAnotherResult()
 });

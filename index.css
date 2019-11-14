@@ -1,55 +1,61 @@
 * {
     box-sizing: border-box;
+    align-items: center;
+    text-align: center;
   }
   
-  body {
+body {
     font-family: 'Roboto', sans-serif;
-  }
+}
   
-  button, label {
+button, label {
     font-size: 24px;
-  }
+}
 
-  select {
+/* Added some button formatting */
+button {
+    width: 250px;
+    color: white;
+    background-color: black;
+}
+
+button, select {
     height: 60px;
-    width: 60px;
     font-style: bold;
     font-size: 24px;
     text-align: center;
-    color: black;
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 10px;
     cursor: pointer;
-    background-color: white;
     border: 5px solid black;
     border-radius: 5px;
-  }
+}
 
-  .container {
+img {
+    display: block;
+    max-width: 800px;
+}
+
+select {
+    width: 70px;
+    color: black;
+    background-color: white;
+}
+
+.container {
     max-width: 700px;
     margin: 0 auto;
-  }
+}
   
-  .hidden {
+.hidden {
     display: none;
-  }
+}
 
-  /* Added some button formatting */
-  button {
-    height: 60px;
-    width: 250px;
-    font-style: bold;
-    color: white;
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 10px;
-    cursor: pointer;
-    background-color: black;
-    border: 5px solid black;
-    border-radius: 5px;
+@media screen and (max-width: 500px) {
+    img {
+        width: 100%;
+    }
 }
