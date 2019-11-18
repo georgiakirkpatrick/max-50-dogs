@@ -17,12 +17,13 @@ button {
     width: 240px;
     color: white;
     background-color: black;
+    font-size: 24px;
+
 }
 
 button, select {
     height: 100px;
     font-style: bold;
-    font-size: 24px;
     text-align: center;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -41,12 +42,15 @@ img {
 label {
     display: block;
     font-size: 2em;
+    padding: 20px 0px 20px 0px;
 }
 
 select {
     width: 80px;
     color: black;
     background-color: white;
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
 }
 
 .container {
